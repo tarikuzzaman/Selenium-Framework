@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="bankofamerica login" parallel="tests">
+
+
+    <parameter name="os" value="Mac"/>
+    <!--<parameter name="browser" value="firefox"/>-->
+    <!--<parameter name="browserVersion" value="46"/>-->
+    <parameter name="url" value="http://www.bankofamerica.com"/>
+
+    <test name = "Bankofamerica Login">
+        <classes>
+            <class name="ChromeLogin"/>
+            <class name="FirefoxLogin"/>
+            <class name="CarLoan"/>
+        </classes>
+    </test>
+
+</suite>

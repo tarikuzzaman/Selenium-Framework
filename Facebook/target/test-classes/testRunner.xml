@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Facebook login" parallel="tests">
+
+
+    <parameter name="os" value="Mac"/>
+    <!--<parameter name="browser" value="firefox"/>-->
+    <!--<parameter name="browserVersion" value="46"/>-->
+    <parameter name="url" value="http://www.facebook.com"/>
+
+    <test name = "Facebook Login">
+        <classes>
+            <class name="FacebookLogin"/>
+            <class name="FacebookLang"/>
+        </classes>
+    </test>
+
+</suite>
